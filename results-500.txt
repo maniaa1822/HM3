@@ -1,0 +1,187 @@
+==============================
+SPLIT: test
+{'rouge1': 34.5951, 'rouge2': 22.8455, 'rougeL': 32.0077, 'rougeLsum': 32.258}
+{'precision': [0.8016546368598938, 0.9651249051094055, 0.8813447952270508, 0.9712327718734741, 0.9657555818557739, 0.8215609788894653, 0.8885143399238586, 0.9999998211860657, 0.8243880271911621, 0.8264808058738708, 0.8578095436096191, 0.8779736757278442, 0.8486163020133972, 0.8611646294593811, 0.8946315050125122, 0.997984766960144, 0.9726775884628296, 0.8352257013320923, 0.9020224213600159, 0.9153772592544556, 0.8415697813034058, 0.831443190574646, 0.9931638240814209, 0.8473882675170898, 0.836919367313385, 0.859444797039032, 0.8930935263633728, 0.8768762946128845, 0.8183097243309021, 0.799652636051178, 0.8523662090301514, 0.8832780122756958, 0.9523544907569885, 0.8659517765045166, 0.8109184503555298, 0.8733941316604614, 0.8929682970046997, 0.908104419708252, 0.8196769952774048, 0.9728997945785522, 0.8707242012023926, 0.8654106855392456, 0.8710821866989136, 0.8346363306045532, 0.837471604347229, 0.9762950539588928, 0.8842750787734985, 0.845312774181366, 0.8242962956428528, 0.818076491355896], 'recall': [0.8190119862556458, 0.8999338150024414, 0.8944217562675476, 0.9765336513519287, 0.8984262943267822, 0.8251490592956543, 0.8943158388137817, 0.9999998211860657, 0.8460538387298584, 0.8248956203460693, 0.8809131383895874, 0.87448650598526, 0.7939487099647522, 0.8511069416999817, 0.8929887413978577, 0.9680598378181458, 0.982890248298645, 0.8609869480133057, 0.9097392559051514, 0.8823058605194092, 0.8308370113372803, 0.7866693139076233, 0.9861687421798706, 0.7851659059524536, 0.8412332534790039, 0.8537957668304443, 0.962106466293335, 0.8879296779632568, 0.8256920576095581, 0.8578939437866211, 0.8392026424407959, 0.919822096824646, 0.9171428084373474, 0.8515377044677734, 0.7123644351959229, 0.846361517906189, 0.901059627532959, 0.9502135515213013, 0.8117390871047974, 0.9798957109451294, 0.8465955257415771, 0.8880475759506226, 0.8447046875953674, 0.841559886932373, 0.8437654972076416, 0.8742897510528564, 0.8927860260009766, 0.8533642292022705, 0.8738912343978882, 0.7895467281341553], 'f1': [0.8102403879165649, 0.9313900470733643, 0.8878350853919983, 0.9738759994506836, 0.9308750629425049, 0.8233510851860046, 0.8914056420326233, 0.9999998211860657, 0.8350803852081299, 0.8256874084472656, 0.8692078590393066, 0.8762266039848328, 0.8203727602958679, 0.8561062216758728, 0.8938093185424805, 0.9827945232391357, 0.9777572751045227, 0.8479107022285461, 0.9058644771575928, 0.8985373377799988, 0.8361689448356628, 0.8084367513656616, 0.9896538853645325, 0.8150913119316101, 0.8390707969665527, 0.8566109538078308, 0.9263163805007935, 0.8823683857917786, 0.8219842910766602, 0.8277500867843628, 0.8457331657409668, 0.9011797308921814, 0.9344170689582825, 0.858684241771698, 0.7584532499313354, 0.8596653938293457, 0.8969957232475281, 0.9286818504333496, 0.8156887292861938, 0.976385235786438, 0.8584903478622437, 0.8765829801559448, 0.8576906323432922, 0.838083803653717, 0.8406067490577698, 0.922481119632721, 0.8885101675987244, 0.8493193984031677, 0.8483695387840271, 0.8035584688186646], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.44.2)'}
+{'bleu': 0.3068772642474355, 'precisions': [0.40827067669172934, 0.290625, 0.2778229082047116, 0.26903553299492383], 'brevity_penalty': 1.0, 'length_ratio': 1.043956043956044, 'translation_length': 1330, 'reference_length': 1274}
+{'meteor': 0.32288151502188184}
+==============================
+Map: 100%
+ 3/3 [00:12<00:00,  4.21s/ examples]
+text ### Text:
+There is just over a week left for South Lanarkshire’s missing £1m Lotto Millionaire Raffle winner to claim their prize.
+The missing ticket is due to expire on Thursday, February 23, and players are urged to double check if they have code GREY 8746 6648.
+The one-off Lotto draw on August 27, 2016, was held to thank National Lottery players for the support they have given Team GB through playing the lottery.
+Andy Carter, senior winners’ advisor at The National Lottery, said: “We’re eager to find the South Lanarkshire mystery ticket-holder and unite them with their winnings – this amazing prize could really make a huge difference to somebody’s life.
+“Team GB’s success in Rio, when their haul was a whopping 67 medals, was outstanding and worthy of celebration with an extra special Lotto draw, now we just need to find South Lanarkshire’s winner to help them celebrate their own win!”
+Prize winners have 180 days to claim, if no one comes forward with the winning ticket before the deadline, then the prize money, plus all the interest it has generated, will go to help National Lottery-funded projects across the UK.
+Anyone who has any queries or who believes they have the winning ticket should call the National Lottery Line on 0844 338 7551 or e-mail help@national-lottery.co.uk.
+### Summary:
+OUTPUT  There is just over a week left for South Lanarkshire’s missing £1m Lotto Millionaire Raffle winner to claim their prize.
+text ### Text:
+With big corporations such as HSBC and Virgin actively encouraging their employees to work from home, a new survey has found that 38% of Scots spend their remote working hours doing personal tasks.
+And when they are doing the job in hand, 62% do so in their pyjamas.
+A recent study finds that the number of people working from home has increased by a fifth in 10 years and home insurer, Together Mutual Insurance have conducted some new research to find out why people are working from home, in addition to how companies are having to change to accommodate this trend.
+The main reason employees dodge the workplace and opt to work from home is to avoid their commute - and with rail fares facing the biggest rise for five years, this is no surprise.
+Additionally, over a third opt to work from home to avoid the distraction of their colleagues, allowing them to concentrate on their work.
+Meanwhile, nearly a quarter (24%) decide to stay home so that they can take a break whenever they feel like it, with nearly one in 10 taking advantage of a long lunch.
+Of the 38% which get distracted when working from home, the causes of procrastination are:
+Chatting to friends and family at home - 59%
+Doing household chores - 58%
+Running personal errands - 49%
+The survey also reveals that 23% of Scots would work from home more if it were not for their company putting a limit on the number of days allowed, suggesting that businesses are limiting their employees’ productivity and flexibility.
+Jon Craven, CEO of Together Mutual Insurance said: “With the average person working from home 13 days a year, companies are having to accommodate for this with equipment and remote-working friendly IT systems.
+“Our findings highlighted that the average person needs £2097 worth of technology in order to work remotely and with 38% of people claiming to get distracted during work hours, it begs the question as to how beneficial remote working is for businesses.”
+### Summary:
+OUTPUT  With big corporations such as HSBC and Virgin actively encouraging their employees to work from home, a new survey has found that 38% of Scots spend their remote working hours doing personal tasks.
+text ### Text:
+JOHNSON & JOHNSON has unveiled controversial plans for a second wind turbine, towering up to 100 metres high over Castletroy.
+The company, which employs hundreds of people through its Vistakon subsidiary in the National Technology Park, has confirmed it has submitted a planning application to Limerick City and County Council for the structure.
+It’s anticipated it will be at a height of 99 metres high, with a rotor radius of 51.5m wide.
+In a statement, the firm has insisted it is the “second and final” wind turbine it has planned for its facility here – and pointed out that it will provide “significant environmental benefits”.
+But the proposals are already set to attract objections from a community left reeling from the erection of a similar structure back in 2015.
+Fine Gael councillor Michael Sheahan said he is “deeply concerned” about the proposals.
+“We already have one here. We now might have a second one on the way. The visuals of this will be very off-putting for people. In the country, you’re quite a bit away from these wind farms. But in this particular area, the existing turbine overlooks Mulcair Drive and the Mountshannon Road,” he said.
+The location for the new structure is to the north-west of the existing turbine, at a site known as “Castletroy and Rivers” in Plassey, the planning notice states.
+Cllr Joe Pond, Fianna Fail, said he would have liked it if the company had engaged with local residents ahead of seeking planning permission.
+“I’d say local residents will be dead set against it. To them, the current turbine is an eyesore in the community. The noise alone, I’m being told by residents in the Mulcair Drive is not nice,” he said. “I’m all for a factory being self-sufficient in its energy ratings, but surely to goodness, something can be done to reduce the noise.”
+An Taisce made a submission on the first turbine, outlining concerns over its “visual impact and intrusion on the landscape”.
+A spokesperson for the Limerick branch of the heritage body this week said An Taisce would look at the impact of the turbine on the local environment, as well as the benefits it would bring in terms of helping Ireland meet its commitment to cut greenhouse gas emissions.
+Johnson & Johnson says the turbine will generate up to three megawatts of electricity.
+### Summary:
+OUTPUT  The company has submitted a planning application to Limerick City and County Council for the structure.
+==============================
+TEXT: There is just over a week left for South Lanarkshire’s missing £1m Lotto Millionaire Raffle winner to claim their prize.
+The missing ticket is due to expire on Thursday, February 23, and players are urged to double check if they have code GREY 8746 6648.
+The one-off Lotto draw on August 27, 2016, was held to thank National Lottery players for the support they have given Team GB through playing the lottery.
+Andy Carter, senior winners’ advisor at The National Lottery, said: “We’re eager to find the South Lanarkshire mystery ticket-holder and unite them with their winnings – this amazing prize could really make a huge difference to somebody’s life.
+“Team GB’s success in Rio, when their haul was a whopping 67 medals, was outstanding and worthy of celebration with an extra special Lotto draw, now we just need to find South Lanarkshire’s winner to help them celebrate their own win!”
+Prize winners have 180 days to claim, if no one comes forward with the winning ticket before the deadline, then the prize money, plus all the interest it has generated, will go to help National Lottery-funded projects across the UK.
+Anyone who has any queries or who believes they have the winning ticket should call the National Lottery Line on 0844 338 7551 or e-mail help@national-lottery.co.uk.
+LABEL: Visit now for the latest business news - direct from the Motherwell Times
+LABEL: Visit now for the latest business news - direct from the Motherwell Times
+==============================
+TEXT: With big corporations such as HSBC and Virgin actively encouraging their employees to work from home, a new survey has found that 38% of Scots spend their remote working hours doing personal tasks.
+And when they are doing the job in hand, 62% do so in their pyjamas.
+A recent study finds that the number of people working from home has increased by a fifth in 10 years and home insurer, Together Mutual Insurance have conducted some new research to find out why people are working from home, in addition to how companies are having to change to accommodate this trend.
+The main reason employees dodge the workplace and opt to work from home is to avoid their commute - and with rail fares facing the biggest rise for five years, this is no surprise.
+Additionally, over a third opt to work from home to avoid the distraction of their colleagues, allowing them to concentrate on their work.
+Meanwhile, nearly a quarter (24%) decide to stay home so that they can take a break whenever they feel like it, with nearly one in 10 taking advantage of a long lunch.
+Of the 38% which get distracted when working from home, the causes of procrastination are:
+Chatting to friends and family at home - 59%
+Doing household chores - 58%
+Running personal errands - 49%
+The survey also reveals that 23% of Scots would work from home more if it were not for their company putting a limit on the number of days allowed, suggesting that businesses are limiting their employees’ productivity and flexibility.
+Jon Craven, CEO of Together Mutual Insurance said: “With the average person working from home 13 days a year, companies are having to accommodate for this with equipment and remote-working friendly IT systems.
+“Our findings highlighted that the average person needs £2097 worth of technology in order to work remotely and with 38% of people claiming to get distracted during work hours, it begs the question as to how beneficial remote working is for businesses.”
+LABEL: With big corporations such as HSBC and Virgin actively encouraging their employees to work from home, a new survey has found that 38% of Scots spend their remote working hours doing personal tasks.
+LABEL: With big corporations such as HSBC and Virgin actively encouraging their employees to work from home, a new survey has found that 38% of Scots spend their remote working hours doing personal tasks.
+==============================
+TEXT: JOHNSON & JOHNSON has unveiled controversial plans for a second wind turbine, towering up to 100 metres high over Castletroy.
+The company, which employs hundreds of people through its Vistakon subsidiary in the National Technology Park, has confirmed it has submitted a planning application to Limerick City and County Council for the structure.
+It’s anticipated it will be at a height of 99 metres high, with a rotor radius of 51.5m wide.
+In a statement, the firm has insisted it is the “second and final” wind turbine it has planned for its facility here – and pointed out that it will provide “significant environmental benefits”.
+But the proposals are already set to attract objections from a community left reeling from the erection of a similar structure back in 2015.
+Fine Gael councillor Michael Sheahan said he is “deeply concerned” about the proposals.
+“We already have one here. We now might have a second one on the way. The visuals of this will be very off-putting for people. In the country, you’re quite a bit away from these wind farms. But in this particular area, the existing turbine overlooks Mulcair Drive and the Mountshannon Road,” he said.
+The location for the new structure is to the north-west of the existing turbine, at a site known as “Castletroy and Rivers” in Plassey, the planning notice states.
+Cllr Joe Pond, Fianna Fail, said he would have liked it if the company had engaged with local residents ahead of seeking planning permission.
+“I’d say local residents will be dead set against it. To them, the current turbine is an eyesore in the community. The noise alone, I’m being told by residents in the Mulcair Drive is not nice,” he said. “I’m all for a factory being self-sufficient in its energy ratings, but surely to goodness, something can be done to reduce the noise.”
+An Taisce made a submission on the first turbine, outlining concerns over its “visual impact and intrusion on the landscape”.
+A spokesperson for the Limerick branch of the heritage body this week said An Taisce would look at the impact of the turbine on the local environment, as well as the benefits it would bring in terms of helping Ireland meet its commitment to cut greenhouse gas emissions.
+Johnson & Johnson says the turbine will generate up to three megawatts of electricity.
+LABEL: JOHNSON & JOHNSON has unveiled controversial plans for a second wind turbine, towering up to 100 metres high over Castletroy.
+The company, which employs hun...
+LABEL: JOHNSON & JOHNSON has unveiled controversial plans for a second wind turbine, towering up to 100 metres high over Castletroy.
+The company, which employs hun...
+
+
+
+kaggle eval
+text ### Text:
+All babies in Scotland due from tomorrow (August 15) will be gifted a Box full of essential items aimed at tackling inequality and promoting health.
+The boxes are a strong signal of the Scottish Government’s determination that every child, regardless of their circumstances should get the best start in life.
+Each Baby Box contains a large number of items which are not only practical but designed to help tackle inequality and improve health. The Box itself also doubles up as a safe sleep space, awarded British Safety standard accreditation as a crib for domestic use.
+Mark McDonald Minister for Childcare and Early Years said: “We are committed to doing everything we can to give every baby born in Scotland the best possible start in life and the Baby Box is just one of the range of measures we are using to help babies and parents thrive in the crucial early months.
+“The Box includes a large number of items which are not only practical but designed to help tackle inequality and improve health. It can also be used as a safe sleep space and has been awarded British Safety standard accreditation as a crib for use at home.
+“We will continue to listen to feedback as the Baby Box reaches more families and work with parents and healthcare professionals to keep the contents under review.
+“The national roll-out is the result of months of hard work and engagement with healthcare professionals, stakeholders and parents and I would like to thank everyone involved in helping us reach this momentous occasion.
+“The Baby Box has certainly captured the public’s imagination and we are extremely proud to introduce it to Scotland.”
+Chief Medical Officer Dr Catherine Calderwood said: “All the evidence shows that the early years are crucial for children’s development. What happens then can be linked to outcomes much later in life. So we know that measures undertaken in the 0-3 years age range have the opportunity to make the biggest impact.
+“That is why we have been working hard to enhance the existing infrastructure available to support families in these crucial early years from before birth all the way up to school age and beyond.
+“Over and above the practical benefits the items within the Baby Box provide, the box itself also offers healthcare professionals a unique opportunity to introduce expectant parents to a wide range of health promotion information.”
+All babies due on or after 15 August will be eligible for a Baby Box.
+### Summary:
+OUTPUT  All babies in Scotland due from tomorrow (August 15) will be gifted a Box full of essential items aimed at tackling inequality and promoting health.
+text ### Text:
+LIMERICK is in line for a jobs boost after the way was cleared for Mr Binman to develop a new waste facility on the Dock Road.
+The firm is planning to create 30 permanent roles and 100 temporary construction jobs as part of its multi-million euro project which will transform a portion of land on the city’s edge.
+Limerick City and County Council gave the proposal the green light earlier this year, but this was appealed to An Bord Pleanala.
+However, the sole appelant has withdrawn his complaint, leaving Mr Binman – which trades under the name Valcroft – clear to proceed.
+Around 90,000 tonnes of waste are set to be handled yearly at the four-acre site, near the M7 entrance.
+“We’re delighted with the outcome of the planning process, as we want to strengthen our business and create a positive impact on the local Limerick economy.
+"The development which has been granted permission will allow Mr Binman base all its operations off one site, and will incorporate offices, maintenance garages and modern recycling facilities,” said Joe Cleary, the sales and marketing director of Mr Binman.
+According to the firm’s plans, the development will take place in two stages: phase one will see a 1,180 square metre administration building, a civic amenity area and associated office, with the second part bringing a modular waste transfer building with a floor area of 5,102 square metres.
+Initially 40 groups and individuals lodged objections to the project, including the Brothers of Charity and residents associations in Grange, Inis Lua and Sli na Manach.
+Their concerns centred around rodent control and odour problems, which may emanate from the plant, at a key entry to the city.
+However, only one individual formally referred the matter to An Bord Pleanala.
+Mr Cleary played down any fears over the environment, adding: “It is to be located on appropriately zoned industrial land and significant work was undertaken to assess potential environmental impacts of the development and the business and its advisors are happy there are no adverse impacts.”
+### Summary:
+OUTPUT  LIMERICK is in line for a jobs boost after the way was cleared for Mr Binman to develop a new waste facility on the Dock Road.
+text ### Text:
+THE man who shot innocent Limerick man Shane Geoghegan nine years ago is seeking to have his conviction overturned by the European Court of Human Rights (ECHR), it has been confirmed.
+Barry Doyle, aged 32, who has addresses in Ballinacurra Weston and Portland Row in Dublin was sentenced to life imprisonment more than five years ago after he was convicted, following a retrial, of murdering the 28-year-old in Dooradoyle on November 9, 2008.
+During the trial, a jury at the Central Criminal Court heard that Doyle admitted during garda interviews that he shot Mr Geoghegan in a what was a case of mistaken identity.
+Doyle, who had been ordered to shoot another man by criminal figure John Dundon, was arrested on February 24, 2009 and taken to Bruff garda station.
+He was questioned more than a dozen times over three days and the admissions, the jury heard, were made during his 15th interview.
+In previous appeals before the Court of Appeal and the Supreme Court, lawyers representing the hitman argued the admissions should not have been admitted as evidence during the original trial because they were obtained in a “non-voluntary” manner as a result of threats and inducements and psychological oppression by gardai.
+This, they claimed, was because Doyle was promised by gardai that his girlfriend would be released if he admitted his role in the killing.
+The Court of Appeal rejected the appeal in 2015 while the Supreme also rejected the appeal in a 6-1 majority decision which was handed down in January.
+According to the Irish Sun, lawyers representing Doyle have now initiated proceedings at the ECHR.
+In submissions, they state the confessions were made as a “result of a process of inducement, persisting misinformation and erosion of his (Doyle’s) right to silence”.
+It’s not yet known when the latest appeal will be heard.
+### Summary:
+OUTPUT  The man who shot Shane Geoghegan nine years ago is seeking to have his conviction overturned by the ECHR, it has been confirmed.
+==============================
+TEXT: All babies in Scotland due from tomorrow (August 15) will be gifted a Box full of essential items aimed at tackling inequality and promoting health.
+The boxes are a strong signal of the Scottish Government’s determination that every child, regardless of their circumstances should get the best start in life.
+Each Baby Box contains a large number of items which are not only practical but designed to help tackle inequality and improve health. The Box itself also doubles up as a safe sleep space, awarded British Safety standard accreditation as a crib for domestic use.
+Mark McDonald Minister for Childcare and Early Years said: “We are committed to doing everything we can to give every baby born in Scotland the best possible start in life and the Baby Box is just one of the range of measures we are using to help babies and parents thrive in the crucial early months.
+“The Box includes a large number of items which are not only practical but designed to help tackle inequality and improve health. It can also be used as a safe sleep space and has been awarded British Safety standard accreditation as a crib for use at home.
+“We will continue to listen to feedback as the Baby Box reaches more families and work with parents and healthcare professionals to keep the contents under review.
+“The national roll-out is the result of months of hard work and engagement with healthcare professionals, stakeholders and parents and I would like to thank everyone involved in helping us reach this momentous occasion.
+“The Baby Box has certainly captured the public’s imagination and we are extremely proud to introduce it to Scotland.”
+Chief Medical Officer Dr Catherine Calderwood said: “All the evidence shows that the early years are crucial for children’s development. What happens then can be linked to outcomes much later in life. So we know that measures undertaken in the 0-3 years age range have the opportunity to make the biggest impact.
+“That is why we have been working hard to enhance the existing infrastructure available to support families in these crucial early years from before birth all the way up to school age and beyond.
+“Over and above the practical benefits the items within the Baby Box provide, the box itself also offers healthcare professionals a unique opportunity to introduce expectant parents to a wide range of health promotion information.”
+All babies due on or after 15 August will be eligible for a Baby Box.
+LABEL: All babies in Scotland due from tomorrow (August 15) will be gifted a Box full of essential items aimed at tackling inequality and promoting health.
+LABEL: All babies in Scotland due from tomorrow (August 15) will be gifted a Box full of essential items aimed at tackling inequality and promoting health.
+==============================
+TEXT: LIMERICK is in line for a jobs boost after the way was cleared for Mr Binman to develop a new waste facility on the Dock Road.
+The firm is planning to create 30 permanent roles and 100 temporary construction jobs as part of its multi-million euro project which will transform a portion of land on the city’s edge.
+Limerick City and County Council gave the proposal the green light earlier this year, but this was appealed to An Bord Pleanala.
+However, the sole appelant has withdrawn his complaint, leaving Mr Binman – which trades under the name Valcroft – clear to proceed.
+Around 90,000 tonnes of waste are set to be handled yearly at the four-acre site, near the M7 entrance.
+“We’re delighted with the outcome of the planning process, as we want to strengthen our business and create a positive impact on the local Limerick economy.
+"The development which has been granted permission will allow Mr Binman base all its operations off one site, and will incorporate offices, maintenance garages and modern recycling facilities,” said Joe Cleary, the sales and marketing director of Mr Binman.
+According to the firm’s plans, the development will take place in two stages: phase one will see a 1,180 square metre administration building, a civic amenity area and associated office, with the second part bringing a modular waste transfer building with a floor area of 5,102 square metres.
+Initially 40 groups and individuals lodged objections to the project, including the Brothers of Charity and residents associations in Grange, Inis Lua and Sli na Manach.
+Their concerns centred around rodent control and odour problems, which may emanate from the plant, at a key entry to the city.
+However, only one individual formally referred the matter to An Bord Pleanala.
+Mr Cleary played down any fears over the environment, adding: “It is to be located on appropriately zoned industrial land and significant work was undertaken to assess potential environmental impacts of the development and the business and its advisors are happy there are no adverse impacts.”
+LABEL: New facility given permission for Dock Road - will result in 130 jobs
+LABEL: New facility given permission for Dock Road - will result in 130 jobs
+==============================
+TEXT: THE man who shot innocent Limerick man Shane Geoghegan nine years ago is seeking to have his conviction overturned by the European Court of Human Rights (ECHR), it has been confirmed.
+Barry Doyle, aged 32, who has addresses in Ballinacurra Weston and Portland Row in Dublin was sentenced to life imprisonment more than five years ago after he was convicted, following a retrial, of murdering the 28-year-old in Dooradoyle on November 9, 2008.
+During the trial, a jury at the Central Criminal Court heard that Doyle admitted during garda interviews that he shot Mr Geoghegan in a what was a case of mistaken identity.
+Doyle, who had been ordered to shoot another man by criminal figure John Dundon, was arrested on February 24, 2009 and taken to Bruff garda station.
+He was questioned more than a dozen times over three days and the admissions, the jury heard, were made during his 15th interview.
+In previous appeals before the Court of Appeal and the Supreme Court, lawyers representing the hitman argued the admissions should not have been admitted as evidence during the original trial because they were obtained in a “non-voluntary” manner as a result of threats and inducements and psychological oppression by gardai.
+This, they claimed, was because Doyle was promised by gardai that his girlfriend would be released if he admitted his role in the killing.
+The Court of Appeal rejected the appeal in 2015 while the Supreme also rejected the appeal in a 6-1 majority decision which was handed down in January.
+According to the Irish Sun, lawyers representing Doyle have now initiated proceedings at the ECHR.
+In submissions, they state the confessions were made as a “result of a process of inducement, persisting misinformation and erosion of his (Doyle’s) right to silence”.
+It’s not yet known when the latest appeal will be heard.
+LABEL: THE man who shot innocent Limerick man Shane Geoghegan nine years ago is seeking to have his conviction overturned by the European Court of Human...
+LABEL: THE man who shot innocent Limerick man Shane Geoghegan nine years ago is seeking to have his conviction overturned by the European Court of Human...

@@ -1,0 +1,192 @@
+% Example LaTeX document using the acl style
+\documentclass[11pt,a4paper]{article}
+\usepackage[hyperref]{acl}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{adjustbox}
+\usepackage{booktabs}
+
+% To include affiliations, use the \aclfinalcopy command
+% \aclfinalcopy % Uncomment this line for the final submission
+
+\title{Assignment 3: Quantivative and Qualitative evaluation of Generative Models for summary generation}
+
+\author{Matteo Manias 1822363}
+
+\date{}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Generation of summaries using the LLM model \textbf{MINERVA-350M} fine-tuned on the \textbf{CC-NEWS} dataset
+is evaluated in this report with standard metrics like ROUGE as a quantitative metric useful to compare 
+the performance of different fine-tuning steps and the quality of the generated summaries.
+Further qualitative analysis is provided to overcome the inherent limitations of ROUGE, and quantitative evaluation metrics
+\end{abstract}
+
+\section{CC-news dataset}
+The dataset is used for fine-tuning the Model on text summarization on news articles,
+ the data used for fine-tuning in the CC-NEWS dataset is as follows:
+\begin{itemize}
+    \item \textbf{text}: the original text to be summarized
+    \item \textbf{gold summary} : the human generated summary of the text
+    \item \textbf{Label}: the title of the article
+\end{itemize}
+
+\section{MINERVA-350M model}
+The model used for fine-tuning on summary generation is the \textbf{MINERVA-350M} which is a small
+but fast and efficient model suitable for fine-tuning on small datasets. 
+\\The model is pretrained on italian and english text.
+
+\section{Fine-tuning on the CC-NEWS dataset}
+Fine-tuning refers to the process of supervised training of a pre-trained model, generally in an unsupervised fashion for LLMs,
+on a new dataset.
+This application of transfer learning allows the model to retain the general representations learned during pre-training
+and use them efficiently on the new dataset, which may not be large or general enough to train a model from scratch.
+\\The model is fine-tuned for 1000 additional steps on the CC-NEWS dataset and checkpoints at 500 steps and 1000 steps
+are considered for evaluation.
+
+\section{Evaluation Metrics}
+Given the intrinsic nature of natural language, the evaluation of LLM generated content proves a challenging task.
+Considered and implemente metrics are base on correspondence between the generated summary and the human generated summary
+at a word level and sequence of word level (ROUGE), or similarity computed at a sentence level (BERTScore).
+Additional metrics are implemented (bleu, meteor) based on more sophisticated algorithms
+that take into account more complex relationships between words and sentences.
+\begin {itemize}
+    \item \textbf{ROUGE} : Recall-Oriented Understudy for Gisting Evaluation,
+            \item \begin{itemize}
+                \item \textbf{ROUGE-1} : measures the overlap of unigrams.
+                \item \textbf{ROUGE-2} : measures the overlap of bigrams.
+                \item \textbf{ROUGE-L} : measures the longest common subsequence between.
+            \end{itemize}
+    \item \textbf{BLEU}: Bilingual Evaluation Understudy,
+     it is a weighted geometric mean of all modified n-gram precisions, multiplied a the brevity penalty
+    \item \textbf{METEOR}: Metric for Evaluation of Translation with Explicit ORdering,The metric is based on the harmonic mean of unigram precision and recall,
+     with recall weighted higher than precision. It also has several features that are not found in other metrics, such as stemming and synonymy matching,
+     along with the standard exact word matching.
+    \item \textbf{BERTScore}: BERTScore is a metric that computes the similarity between two sentences based on the cosine similarity computed on the BERT embeddings of the sentences.
+\end{itemize}
+\subsection{Limitations of standard metrics}
+The standard metrics like ROUGE, BLEU, METEOR are based on the correspondence between the generated summary and the human generated summary
+Theese approaches are hindered by the following limitations:
+\raggedright
+\begin{itemize}
+    \item \textbf{Lack of semantic understanding}: Most metrics primarily focus on surface-level matching without understanding the broader content and meaning of the summary.
+    \item \textbf{Lack of informativeness }: Metrics struggle to evaluate whether key information from the original text has been included or omitted
+    \item \textbf{Emphasis on lexical matching}:Metrics like BLEU and ROUGE reward exact word matches, which makes them ill-suited for abstractive summarization, where paraphrasing and semantic equivalence are more important.
+    \item \textbf{Lack of coherence and fluency}: None of the metrics sufficiently assess the coherence, readability, or overall fluency of the summary
+\end{itemize}
+\subsection{Usefulness of quantitative Metrics}
+Nevertheless, these metrics are still useful for comparing the performance of different fine-tuning steps
+ and the quality of the generated summaries,
+as they are easy to compute and can enstablish a preliminary baseline evaluation of the model.
+
+\section{Qualitative Evaluation}
+To overcome the limitations of the standard metrics, a qualitative evaluation often proves useful.
+The qualitative evaluation is based on human judgement and can provide insights specifically into
+the factual consisency, fluency, coherence and relevance.
+\\In the specific evaluated examples, the models seem to output as summary a truncated version of the text.
+\\This poor performance can be attributed to the small size of the dataset or the the model's inability to capture the context of the text as it is a relatively small model. 
+\\Further train time and a larger model could improve the performance of the model.
+\\Nevertheless that the model produces fluent and readable summaries, but the summaries are often incomplete or lack key information by comparison to the golden summary.
+ 
+
+\begin{table}[b]
+    \centering
+    \resizebox{\columnwidth}{!}{%
+    \begin{tabular}{|l|c|c|}
+    \hline
+    \textbf{Metric} & \textbf{500 steps} & \textbf{1000 steps} \\
+    \hline
+    ROUGE-1 & 34.5951 & 36.20 \\
+    ROUGE-2 & 22.8455 & 24.54 \\
+    ROUGE-L &  32.0077 & 34.03 \\
+    ROUGELSUM & 32.258 & 34.31 \\
+    BLEU & 30.68 & 30.26 \\
+    METEOR & 32.28 & 35.96 \\
+    BERTScore & 0.880 & 0.880 \\
+    \hline
+    \end{tabular}%
+    }
+    \caption{Evaluation metrics for the fine-tuning steps at 500 and 1000 steps over a subset of 100 samples,
+    rouge and meteori metrics improve significantly on the 1000 steps model.}
+    \label{table:dataset_comparison}
+\end{table}
+
+
+% References
+\bibliographystyle{acl_natbib}
+\bibliography{your_bib_file}
+\clearpage % Ensures the figure starts on a new page
+
+\begin{figure*}[t]
+    \centering
+    \begin{adjustbox}{width=\textwidth}
+    \begin{tabular}{|p{0.1\textwidth}|p{0.75\textwidth}|}
+    \hline
+    \multicolumn{2}{|c|}{\textbf{Cherry-picked example A}} \\
+    \hline
+    text & All babies in Scotland due from tomorrow (August 15) will be gifted a Box full of essential items aimed at tackling inequality and promoting health. The boxes are a strong signal of the Scottish Government’s determination that every child, regardless of their circumstances should get the best start in life. Each Baby Box contains a large number of items which are not only practical but designed to help tackle inequality and improve health. The Box itself also doubles up as a safe sleep space, awarded British Safety standard accreditation as a crib for domestic use. Mark McDonald Minister for Childcare and Early Years said: “We are committed to doing everything we can to give every baby born in Scotland the best possible start in life and the Baby Box is just one of the range of measures we are using to help babies and parents thrive in the crucial early months. “The Box includes a large number of items which are not only practical but designed to help tackle inequality and improve health. It can also be used as a safe sleep space and has been awarded British Safety standard accreditation as a crib for use at home. “We will continue to listen to feedback as the Baby Box reaches more families and work with parents and healthcare professionals to keep the contents under review. “The national roll-out is the result of months of hard work and engagement with healthcare professionals, stakeholders and parents and I would like to thank everyone involved in helping us reach this momentous occasion. “The Baby Box has certainly captured the public’s imagination and we are extremely proud to introduce it to Scotland.” Chief Medical Officer Dr Catherine Calderwood said: “All the evidence shows that the early years are crucial for children’s development. What happens then can be linked to outcomes much later in life. So we know that measures undertaken in the 0-3 years age range have the opportunity to make the biggest impact. “That is why we have been working hard to enhance the existing infrastructure available to support families in these crucial early years from before birth all the way up to school age and beyond. “Over and above the practical benefits the items within the Baby Box provide, the box itself also offers healthcare professionals a unique opportunity to introduce expectant parents to a wide range of health promotion information.” All babies due on or after 15 August will be eligible for a Baby Box.\\
+    \hline
+    gold summary & All babies in Scotland due from tomorrow (August 15) will be gifted a box full of essential items aimed at tackling inequality and promoting health. \\
+    \hline
+    generated summary @500 steps & All babies in Scotland due from tomorrow (August 15) will be gifted a Box full of essential items aimed at tackling inequality and promoting health..\\
+    \hline
+    generate summary @1000 steps & All babies in Scotland due from tomorrow (August 15) will be gifted a Box full of essential items aimed at tackling inequality and promoting health.\\
+    \hline
+    \end{tabular}
+    \end{adjustbox}
+
+    \end{figure*}
+
+\clearpage
+\begin{figure*}[t]
+    \centering
+    \begin{adjustbox}{width=\textwidth}
+    \begin{tabular}{|p{0.1\textwidth}|p{0.75\textwidth}|}
+    \hline
+    \multicolumn{2}{|c|}{\textbf{Cherry-picked example B}} \\
+    \hline
+    text & LIMERICK is in line for a jobs boost after the way was cleared for Mr Binman to develop a new waste facility on the Dock Road. The firm is planning to create 30 permanent roles and 100 temporary construction jobs as part of its multi-million euro project which will transform a portion of land on the city’s edge. Limerick City and County Council gave the proposal the green light earlier this year, but this was appealed to An Bord Pleanala. However, the sole appelant has withdrawn his complaint, leaving Mr Binman – which trades under the name Valcroft – clear to proceed. Around 90,000 tonnes of waste are set to be handled yearly at the four-acre site, near the M7 entrance. “We’re delighted with the outcome of the planning process, as we want to strengthen our business and create a positive impact on the local Limerick economy. "The development which has been granted permission will allow Mr Binman base all its operations off one site, and will incorporate offices, maintenance garages and modern recycling facilities,” said Joe Cleary, the sales and marketing director of Mr Binman. According to the firm’s plans, the development will take place in two stages: phase one will see a 1,180 square metre administration building, a civic amenity area and associated office, with the second part bringing a modular waste transfer building with a floor area of 5,102 square metres. Initially 40 groups and individuals lodged objections to the project, including the Brothers of Charity and residents associations in Grange, Inis Lua and Sli na Manach. Their concerns centred around rodent control and odour problems, which may emanate from the plant, at a key entry to the city. However, only one individual formally referred the matter to An Bord Pleanala. Mr Cleary played down any fears over the environment, adding: “It is to be located on appropriately zoned industrial land and significant work was undertaken to assess potential environmental impacts of the development and the business and its advisors are happy there are no adverse impacts.”\\
+    \hline
+    gold summary & 	
+    New facility given permission for Dock Road - will result in 130 jobs \\
+    \hline
+    generated summary @500 steps & LIMERICK is in line for a jobs boost after the way was cleared for Mr Binman to develop a new waste facility on the Dock Road.\\
+    \hline
+    generate summary @1000 steps & LIMERICK is in line for a jobs boost after the way was cleared for Mr Binman to develop a new waste facility on the Dock Road.\\
+    \hline
+    \end{tabular}
+    \end{adjustbox}
+
+    \end{figure*}
+
+    \clearpage
+\begin{figure*}[t]
+    \centering
+    \begin{adjustbox}{width=\textwidth}
+    \begin{tabular}{|p{0.1\textwidth}|p{0.75\textwidth}|}
+    \hline
+    \multicolumn{2}{|c|}{\textbf{Cherry-picked example C}} \\
+    \hline
+    text & THE man who shot innocent Limerick man Shane Geoghegan nine years ago is seeking to have his conviction overturned by the European Court of Human Rights (ECHR), it has been confirmed. Barry Doyle, aged 32, who has addresses in Ballinacurra Weston and Portland Row in Dublin was sentenced to life imprisonment more than five years ago after he was convicted, following a retrial, of murdering the 28-year-old in Dooradoyle on November 9, 2008. During the trial, a jury at the Central Criminal Court heard that Doyle admitted during garda interviews that he shot Mr Geoghegan in a what was a case of mistaken identity. Doyle, who had been ordered to shoot another man by criminal figure John Dundon, was arrested on February 24, 2009 and taken to Bruff garda station. He was questioned more than a dozen times over three days and the admissions, the jury heard, were made during his 15th interview. In previous appeals before the Court of Appeal and the Supreme Court, lawyers representing the hitman argued the admissions should not have been admitted as evidence during the original trial because they were obtained in a “non-voluntary” manner as a result of threats and inducements and psychological oppression by gardai. This, they claimed, was because Doyle was promised by gardai that his girlfriend would be released if he admitted his role in the killing. The Court of Appeal rejected the appeal in 2015 while the Supreme also rejected the appeal in a 6-1 majority decision which was handed down in January. According to the Irish Sun, lawyers representing Doyle have now initiated proceedings at the ECHR. In submissions, they state the confessions were made as a “result of a process of inducement, persisting misinformation and erosion of his (Doyle’s) right to silence”. It’s not yet known when the latest appeal will be heard.”\\
+    \hline
+    gold summary & 	
+    THE man who shot innocent Limerick man Shane Geoghegan nine years ago is seeking to have his conviction overturned by the European Court of Human... \\
+    \hline
+    generated summary @500 steps & The man who shot Shane Geoghegan nine years ago is seeking to have his conviction overturned by the ECHR, it has been confirmed.\\
+    \hline
+    generate summary @1000 steps & The man who shot Shane Geoghegan nine years ago is seeking to have his conviction overturned by the ECHR, it has been confirmed.Barry Doyle, aged 32, who has addresses in Ballinacurra Weston and Portland Row in Dublin was sentenced to life imprisonment more than five years ago after he was convicted, following a retrial, of murdering the 28-year-old in Ballinacurra Weston and Portland Row in Dublin.\\
+    \hline
+    \end{tabular}
+    \end{adjustbox}
+
+    \end{figure*}
+
+\end{document}
