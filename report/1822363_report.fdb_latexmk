@@ -1,5 +1,5 @@
 # Fdb version 4
-["bibtex 1822363_report"] 0 "1822363_report.aux" "1822363_report.bbl" "1822363_report" 0 0
+["bibtex 1822363_report"] 0 "1822363_report.aux" "1822363_report.bbl" "1822363_report" 1725966826.88757 0
   "1822363_report.aux" 0 -1 0 "pdflatex"
   "acl_natbib.bst" 0 -1 0 ""
   "your_bib_file.bib" 0 -1 0 ""
@@ -7,9 +7,9 @@
   "1822363_report.bbl"
   "1822363_report.blg"
   (rewritten before read)
-["pdflatex"] 1725893879.59448 "/home/matteo/AI_and_Robotics/NLP/HM3/report/1822363_report.tex" "1822363_report.pdf" "1822363_report" 1725893880.04932 0
+["pdflatex"] 1725966826.54702 "/home/matteo/AI_and_Robotics/NLP/HM3/report/1822363_report.tex" "1822363_report.pdf" "1822363_report" 1725966826.88775 0
   "/etc/texmf/web2c/texmf.cnf" 1723292590.22668 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/matteo/AI_and_Robotics/NLP/HM3/report/1822363_report.tex" 1725893430.15459 16096 ed7941739120a80eeb26835d6438db9b ""
+  "/home/matteo/AI_and_Robotics/NLP/HM3/report/1822363_report.tex" 1725966826.34093 17722 5fb54c874302518f0479dde58102d0b1 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm" 1136768653 4524 6bce29db5bc272ba5f332261583fee9c ""
@@ -109,10 +109,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1724759472.78952 128028 f533b797fba58d231669ea19e894e23e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1724759512 6800787 046b885419cc0ae727584977e6c5bfbc ""
-  "1822363_report.aux" 1725893879.97124 1721 b13e69f02f1a863838984fdaf202901d "pdflatex"
+  "1822363_report.aux" 1725966826.8176 1721 845e5b8c02a2a3cb4e5ab38276a05d42 "pdflatex"
   "1822363_report.bbl" 0 -1 0 "bibtex 1822363_report"
-  "1822363_report.out" 1725893879.97124 1231 bf5d6af97b8e144e23de91002ea2c3da "pdflatex"
-  "1822363_report.tex" 1725893430.15459 16096 ed7941739120a80eeb26835d6438db9b ""
+  "1822363_report.out" 1725966826.83593 1231 bf5d6af97b8e144e23de91002ea2c3da "pdflatex"
+  "1822363_report.tex" 1725966826.34093 17722 5fb54c874302518f0479dde58102d0b1 ""
   "acl.sty" 1725658564.53963 11284 d28736f1c79203b6a88c9722b2eda484 ""
   (generated)
   "1822363_report.aux"
